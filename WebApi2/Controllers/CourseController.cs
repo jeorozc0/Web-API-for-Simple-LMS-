@@ -13,62 +13,63 @@ namespace WebApi.Controllers
         public ActionResult<IEnumerable<Course>> GetAllCourses()
         {
             db.Courses.RemoveRange(db.Courses);
-            db.Add(new Course{ Name = "CS420", ID = 1});
+            db.Add(new Course{ Name = "CS420", ID = 2});
+            db.Add(new Course{ Name = "CS416", ID = 1});
             db.SaveChanges();
-            var course = db.Courses.OrderBy(b => b.ID).First();
+            var course = db.Courses.OrderBy(b => b.ID);
             return Ok(course);
             
         }
 
-        // [HttpGet("{courseId}")]
-        // public ActionResult<Course> GetCourseById(int id)
-        // {
-        //     var course = _courses.Find(c => c.ID == id);
+        [HttpGet("{id:int}")]
+        public ActionResult<Course> GetCourseById(int id)
+        {
+            db.Courses.RemoveRange(db.Courses);
+            db.Add(new Course{ Name = "CS420", ID = 2});
+            db.Add(new Course{ Name = "CS416", ID = 1});
+            db.SaveChanges();
+            var course = db.Courses.First(c => c.ID == id);
+            return Ok(course);
+        }
 
-        //     if (course == null)
-        //     {
-        //         return NotFound();
-        //     }
+        [HttpPost]
+        public ActionResult<Course> CreateCourse(Course course)
+        {
+            db.Add(course);
+            db.SaveChanges();
+            return Ok();
+        }
 
-        //     return Ok(course);
-        // }
+        [HttpPut("{id:int}")]
+        public ActionResult UpdateCourse(int id, Course course)
+        {
+            var existingCourse = db.Courses.Find(id);
 
-        // [HttpPost]
-        // public ActionResult<Course> CreateCourse(Course course)
-        // {
-        //     _courses.Add(course);
+            if (existingCourse == null)
+            {
+                return NotFound();
+            }
 
-        //     return CreatedAtAction(nameof(GetCourseById), new { id = course.ID }, course);
-        // }
+            existingCourse.Name = course.Name;
+            db.SaveChanges();
 
-        // [HttpPut("{courseId}")]
-        // public ActionResult UpdateCourse(int id, Course course)
-        // {
-        //     var existingCourse = _courses.Find(c => c.ID == id);
+            return Ok();
+        }
 
-        //     if (existingCourse == null)
-        //     {
-        //         return NotFound();
-        //     }
+        [HttpDelete("{id:int}")]
+        public ActionResult DeleteCourse(int id)
+        {
+            var courseToRemove = db.Courses.Find(id);
 
-        //     existingCourse.Name = course.Name;
+            if (courseToRemove == null)
+            {
+                return NotFound();
+            }
 
-        //     return NoContent();
-        // }
+           db.Courses.Remove(courseToRemove);
+           db.SaveChanges();
 
-        // [HttpDelete("{courseId}")]
-        // public ActionResult DeleteCourse(int id)
-        // {
-        //     var courseToRemove = _courses.Find(c => c.ID == id);
-
-        //     if (courseToRemove == null)
-        //     {
-        //         return NotFound();
-        //     }
-
-        //     _courses.Remove(courseToRemove);
-
-        //     return NoContent();
-        // }
+            return Ok();
+        }
     }
 }

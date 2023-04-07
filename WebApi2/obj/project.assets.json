@@ -1714,19 +1714,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/jeorozco/.nuget/packages/": {}
+    "C:\\Users\\jeoro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jeorozco/Documents/Spring 2023/CS 420/SimpleLMSPersistance/WebApi2/WebApi2.csproj",
+      "projectUniqueName": "C:\\Users\\jeoro\\Documents\\CS420\\Web-Api-for-Simple-LMS-\\WebApi2\\WebApi2.csproj",
       "projectName": "WebApi2",
-      "projectPath": "/Users/jeorozco/Documents/Spring 2023/CS 420/SimpleLMSPersistance/WebApi2/WebApi2.csproj",
-      "packagesPath": "/Users/jeorozco/.nuget/packages/",
-      "outputPath": "/Users/jeorozco/Documents/Spring 2023/CS 420/SimpleLMSPersistance/WebApi2/obj/",
+      "projectPath": "C:\\Users\\jeoro\\Documents\\CS420\\Web-Api-for-Simple-LMS-\\WebApi2\\WebApi2.csproj",
+      "packagesPath": "C:\\Users\\jeoro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jeoro\\Documents\\CS420\\Web-Api-for-Simple-LMS-\\WebApi2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/jeorozco/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\jeoro\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -1788,7 +1788,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/7.0.100/libexec/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
