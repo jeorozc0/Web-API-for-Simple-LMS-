@@ -28,11 +28,10 @@ namespace WebApi2.Migrations
                     b.Property<int>("Grade")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("ModuleID")
+                    b.Property<int?>("ModuleID")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("ID");
@@ -49,7 +48,6 @@ namespace WebApi2.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("ID");
@@ -67,7 +65,6 @@ namespace WebApi2.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("ID");
@@ -81,9 +78,7 @@ namespace WebApi2.Migrations
                 {
                     b.HasOne("Module", "Module")
                         .WithMany("Assignments")
-                        .HasForeignKey("ModuleID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ModuleID");
 
                     b.Navigation("Module");
                 });

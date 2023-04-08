@@ -136,3 +136,4 @@ C:\Users\jeoro\Documents\CS420\Web-Api-for-Simple-LMS-\WebApi2\obj\Debug\net7.0\
 C:\Users\jeoro\Documents\CS420\Web-Api-for-Simple-LMS-\WebApi2\obj\Debug\net7.0\WebApi2.pdb
 C:\Users\jeoro\Documents\CS420\Web-Api-for-Simple-LMS-\WebApi2\obj\Debug\net7.0\WebApi2.genruntimeconfig.cache
 C:\Users\jeoro\Documents\CS420\Web-Api-for-Simple-LMS-\WebApi2\obj\Debug\net7.0\ref\WebApi2.dll
+C:\Users\jeoro\Documents\CS420\Web-Api-for-Simple-LMS-\WebApi2\bin\Debug\net7.0\Microsoft.AspNetCore.TestHost.dll

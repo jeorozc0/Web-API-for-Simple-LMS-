@@ -1,22 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
 using WebApi2;
-namespace WebApi.Controllers
+namespace WebApi2.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
     public class CourseController : ControllerBase
     {
         DomainContext db = new DomainContext();
-        
+        private DomainContext context;
+
+        public CourseController(DomainContext context)
+        {
+            this.context = context;
+        }
 
         [HttpGet]
         public ActionResult<IEnumerable<Course>> GetAllCourses()
         {
-            db.Courses.RemoveRange(db.Courses);
-            db.Add(new Course{ Name = "CS420", ID = 2});
-            db.Add(new Course{ Name = "CS416", ID = 1});
+            var course = db.Courses.OrderBy(b => b.ID).First();
             db.SaveChanges();
-            var course = db.Courses.OrderBy(b => b.ID);
+        
             return Ok(course);
             
         }
@@ -24,16 +27,13 @@ namespace WebApi.Controllers
         [HttpGet("{id:int}")]
         public ActionResult<Course> GetCourseById(int id)
         {
-            db.Courses.RemoveRange(db.Courses);
-            db.Add(new Course{ Name = "CS420", ID = 2});
-            db.Add(new Course{ Name = "CS416", ID = 1});
             db.SaveChanges();
             var course = db.Courses.First(c => c.ID == id);
             return Ok(course);
         }
 
         [HttpPost]
-        public ActionResult<Course> CreateCourse(Course course)
+        public ActionResult<Course> CreateCourse(string courseName, Course course)
         {
             db.Add(course);
             db.SaveChanges();

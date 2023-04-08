@@ -53,7 +53,7 @@ namespace WebApi2.Migrations
                     Name = table.Column<string>(type: "TEXT", nullable: false),
                     Grade = table.Column<int>(type: "INTEGER", nullable: false),
                     DueDate = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    ModuleID = table.Column<int>(type: "INTEGER", nullable: false)
+                    ModuleID = table.Column<int>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>
                 {
