@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebApi.Tests
-build_property.ProjectDir = C:\Users\jeoro\Documents\CS420\Web-Api-for-Simple-LMS-\WebApi.Tests\
+build_property.ProjectDir = C:\Users\jeoro\Documents\CS420\Web-API-for-Simple-LMS-\WebApi.Tests\

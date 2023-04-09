@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jeoro\\Documents\\CS420\\Web-Api-for-Simple-LMS-\\WebApi2\\WebApi2.csproj": {}
+    "C:\\Users\\jeoro\\Documents\\CS420\\Web-API-for-Simple-LMS-\\WebApi2\\WebApi2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jeoro\\Documents\\CS420\\Web-Api-for-Simple-LMS-\\WebApi2\\WebApi2.csproj": {
+    "C:\\Users\\jeoro\\Documents\\CS420\\Web-API-for-Simple-LMS-\\WebApi2\\WebApi2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeoro\\Documents\\CS420\\Web-Api-for-Simple-LMS-\\WebApi2\\WebApi2.csproj",
+        "projectUniqueName": "C:\\Users\\jeoro\\Documents\\CS420\\Web-API-for-Simple-LMS-\\WebApi2\\WebApi2.csproj",
         "projectName": "WebApi2",
-        "projectPath": "C:\\Users\\jeoro\\Documents\\CS420\\Web-Api-for-Simple-LMS-\\WebApi2\\WebApi2.csproj",
+        "projectPath": "C:\\Users\\jeoro\\Documents\\CS420\\Web-API-for-Simple-LMS-\\WebApi2\\WebApi2.csproj",
         "packagesPath": "C:\\Users\\jeoro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeoro\\Documents\\CS420\\Web-Api-for-Simple-LMS-\\WebApi2\\obj\\",
+        "outputPath": "C:\\Users\\jeoro\\Documents\\CS420\\Web-API-for-Simple-LMS-\\WebApi2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jeoro\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "abbeMo37Duw0g3Q+7FGLOqdS0QeirvlgfoPjTfgsGNlrxtwPAezTTND+6syqCHEc/5bRICWy92WzsaKjVEJwyg==",
+  "dgSpecHash": "c2n0226nzKzwWCqox4bMKVrc/s/UP+zaaOl5l9o9KEHI4o+7kIzVKGH7WlfQdXbN/4n2CIIrac5ZkYEHRLgkNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jeoro\\Documents\\CS420\\Web-Api-for-Simple-LMS-\\WebApi2\\WebApi2.csproj",
+  "projectFilePath": "C:\\Users\\jeoro\\Documents\\CS420\\Web-API-for-Simple-LMS-\\WebApi2\\WebApi2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jeoro\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\jeoro\\.nuget\\packages\\microsoft.aspnetcore.hosting\\2.2.0\\microsoft.aspnetcore.hosting.2.2.0.nupkg.sha512",

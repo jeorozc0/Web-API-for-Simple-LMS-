@@ -11,16 +11,14 @@ public class DomainContext : DbContext
     {
         DbPath = System.IO.Path.Join("./", "lms.db");
     }
-
-    public DomainContext(DbContextOptions options) : base(options)
-    {
-    }
-
     // The following configures EF to create a Sqlite database file in the
     // special "local" folder for your platform.
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     => options.UseSqlite($"Data Source={DbPath}");
+    
+    public DomainContext(DbContextOptions options):base(options) {}
 }
+    
 public class Course
 {
     public int ID { get; set; }
